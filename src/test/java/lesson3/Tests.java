@@ -3,7 +3,6 @@ package lesson3;
 import io.restassured.path.json.JsonPath;
 import org.junit.jupiter.api.Test;
 
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -13,7 +12,7 @@ public class Tests extends Abstract {
     @Test
     void RequestByCuisine() {
         JsonPath response = given()
-                .queryParam("apiKey", getApiKey())
+                .spec(requestSpecification)
                 .queryParam("cuisine", "korean")
                 .when()
                 .get("https://api.spoonacular.com/recipes/complexSearch")
@@ -25,7 +24,7 @@ public class Tests extends Abstract {
     @Test
     void RequestByCuisineAndQuery() {
         JsonPath response = given()
-                .queryParam("apiKey", getApiKey())
+                .spec(requestSpecification)
                 .queryParam("cuisine", "italian")
                 .queryParam("query", "pasta")
                 .when()
@@ -48,7 +47,7 @@ public class Tests extends Abstract {
     @Test
     void RequestCuisineTypeTime() {
         JsonPath response = given()
-                .queryParam("apiKey", getApiKey())
+                .spec(requestSpecification)
                 .queryParam("cuisine", "italian")
                 .queryParam("type", "main course")
                 .queryParam("maxReadyTime", "20")
@@ -62,7 +61,7 @@ public class Tests extends Abstract {
     @Test
     void RequestByIngridients() {
         JsonPath response = given()
-                .queryParam("apiKey", getApiKey())
+                .spec(requestSpecification)
                 .queryParam("includeIngredients", "tomato, bread, milk")
                 .when()
                 .get("https://api.spoonacular.com/recipes/complexSearch")
@@ -85,8 +84,7 @@ public class Tests extends Abstract {
     @Test
     void PostByTitle() {
         JsonPath response = given()
-                .queryParam("apiKey", getApiKey())
-                .contentType("application/x-www-form-urlencoded")
+                .spec(requestSpecification2)
                 .formParam("title", "burger")
                 .when()
                 .post("https://api.spoonacular.com/recipes/cuisine")
@@ -98,8 +96,7 @@ public class Tests extends Abstract {
     @Test
     void PostByTitleTest2() {
         JsonPath response = given()
-                .queryParam("apiKey", getApiKey())
-                .contentType("application/x-www-form-urlencoded")
+                .spec(requestSpecification2)
                 .formParam("title", "pasta")
                 .when()
                 .post("https://api.spoonacular.com/recipes/cuisine")
@@ -111,8 +108,7 @@ public class Tests extends Abstract {
     @Test
     void PostByByIngredientList() {
         JsonPath response = given()
-                .queryParam("apiKey", getApiKey())
-                .contentType("application/x-www-form-urlencoded")
+                .spec(requestSpecification2)
                 .formParam("ingredientList", "rice")
                 .when()
                 .post("https://api.spoonacular.com/recipes/cuisine")
@@ -124,8 +120,7 @@ public class Tests extends Abstract {
     @Test
     void RequestByIngredientListAndTitle() {
         JsonPath response = given()
-                .queryParam("apiKey", getApiKey())
-                .contentType("application/x-www-form-urlencoded")
+                .spec(requestSpecification2)
                 .formParam("title", "Chinese Chicken Salad")
                 .formParam("ingredientList", "chicken")
                 .formParam("ingredientList", "rice")
@@ -135,4 +130,5 @@ public class Tests extends Abstract {
                 .jsonPath();
         assertThat(response.get("cuisine"), equalTo("Chinese"));
     }
+
 }
