@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc5732f1-3451-493e-b569-8c80910eb02d" name="Changes" comment="Lesson3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/HW/MyClass.java" afterDir="false" />
+    <list default="true" id="dc5732f1-3451-493e-b569-8c80910eb02d" name="Changes" comment="Lesson4">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/api/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/api/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/dto/GetCategoryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/dto/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/utils/RetrofitUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson5/CreateModiFyDeleteProductTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson5/GetCategoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson5/GetProductIdTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson5/GetProductTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lesson3/Abstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson3/Abstract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lesson3/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson3/Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,92 +42,92 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.Tests.AddToShoppingList">
-    <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="JUnit.CreateModiFyDeleteProductTest.tearDown">
+    <configuration name="CreateModiFyDeleteProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BackendTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson3.*" />
+          <option name="PATTERN" value="lesson5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson3" />
-      <option name="MAIN_CLASS_NAME" value="lesson3.Tests" />
+      <option name="PACKAGE_NAME" value="lesson5" />
+      <option name="MAIN_CLASS_NAME" value="lesson5.CreateModiFyDeleteProductTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.AddToShoppingList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateModiFyDeleteProductTest.createProductInFoodCategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BackendTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson3.*" />
+          <option name="PATTERN" value="lesson5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson3" />
-      <option name="MAIN_CLASS_NAME" value="lesson3.Tests" />
-      <option name="METHOD_NAME" value="AddToShoppingList" />
+      <option name="PACKAGE_NAME" value="lesson5" />
+      <option name="MAIN_CLASS_NAME" value="lesson5.CreateModiFyDeleteProductTest" />
+      <option name="METHOD_NAME" value="createProductInFoodCategoryTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.PostByByIngredientList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateModiFyDeleteProductTest.tearDown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BackendTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson3.*" />
+          <option name="PATTERN" value="lesson5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson3" />
-      <option name="MAIN_CLASS_NAME" value="lesson3.Tests" />
-      <option name="METHOD_NAME" value="PostByByIngredientList" />
+      <option name="PACKAGE_NAME" value="lesson5" />
+      <option name="MAIN_CLASS_NAME" value="lesson5.CreateModiFyDeleteProductTest" />
+      <option name="METHOD_NAME" value="tearDown" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.PostByTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetProductIdTest.getProductByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BackendTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson3.*" />
+          <option name="PATTERN" value="lesson5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson3" />
-      <option name="MAIN_CLASS_NAME" value="lesson3.Tests" />
-      <option name="METHOD_NAME" value="PostByTitle" />
+      <option name="PACKAGE_NAME" value="lesson5" />
+      <option name="MAIN_CLASS_NAME" value="lesson5.GetProductIdTest" />
+      <option name="METHOD_NAME" value="getProductByIdTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.PostUnauthorized" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetProductTest.getProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BackendTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson3.*" />
+          <option name="PATTERN" value="lesson5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson3" />
-      <option name="MAIN_CLASS_NAME" value="lesson3.Tests" />
-      <option name="METHOD_NAME" value="PostUnauthorized" />
+      <option name="PACKAGE_NAME" value="lesson5" />
+      <option name="MAIN_CLASS_NAME" value="lesson5.GetProductTest" />
+      <option name="METHOD_NAME" value="getProductTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Tests.AddToShoppingList" />
-        <item itemvalue="JUnit.Tests" />
-        <item itemvalue="JUnit.Tests.PostByByIngredientList" />
-        <item itemvalue="JUnit.Tests.PostByTitle" />
-        <item itemvalue="JUnit.Tests.PostUnauthorized" />
+        <item itemvalue="JUnit.CreateModiFyDeleteProductTest.tearDown" />
+        <item itemvalue="JUnit.CreateModiFyDeleteProductTest" />
+        <item itemvalue="JUnit.CreateModiFyDeleteProductTest.createProductInFoodCategoryTest" />
+        <item itemvalue="JUnit.GetProductIdTest.getProductByIdTest" />
+        <item itemvalue="JUnit.GetProductTest.getProductTest" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660495011717</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Lesson4">
+      <created>1660679488959</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660679488959</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,6 +182,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lesson3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson3" />
+    <MESSAGE value="Lesson4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson4" />
   </component>
 </project>
